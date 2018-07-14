@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+
 void EnsureFilesEndWithNewLine(string root)
 {
     IEnumerable<string> files = Directory.EnumerateFiles(root, "*.cs", SearchOption.AllDirectories);
